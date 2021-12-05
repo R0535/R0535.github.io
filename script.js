@@ -27,11 +27,12 @@ function renderPlaces(places) {
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('gltf-model', 'url(assets/Grimm/untitled5.gltf)');
+       model.setAttribute('gltf-model', 'url(assets/pyramid/untitled.gltf)');
        model.setAttribute('animation-mixer', '');
-       model.setAttribute('scale', '20 20 20');
+       model.setAttribute('scale', '1 1 1');
 
        model.addEventListener('loaded', () => {
+           console.log('loaded');
            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
        });
 
