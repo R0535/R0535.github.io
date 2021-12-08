@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta charset='utf-8'>
+  
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ViajAR</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -21,7 +22,11 @@
         loading-screen="dotsColor: red; backgroundColor: black"
         vr-mode-ui="enabled: false"
         arjs='sourceType: webcam; videoTexture: true; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-    <a-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 1;gpsTimeInterval:0' position = "0 30 0" rotation-reader></a-camera>
+        <a-assets>
+          <a-asset-item id="locator" src="assets/cross/scene.gltf"></a-asset-item>
+        </a-assets>
+    
+        <a-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-projected-camera='gpsMinDistance: 1;gpsTimeInterval:0' position = "0 10 0" rotation-reader></a-camera>
 
   </a-scene>
   <div class="centered">

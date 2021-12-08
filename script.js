@@ -1,41 +1,48 @@
 window.onload = () => {
-    let places = staticLoadPlaces();
-    renderPlaces(places);
+  staticLoadPlaces();
 
-    const button = document.querySelector('button[data-action="change"]');
-    button.innerText = '📸';
+  const button = document.querySelector('button[data-action="change"]');
+  button.innerText = "📸";
 };
 
 function staticLoadPlaces() {
-   return [
-       {
-           name: 'Casa_Pepe',
-           location: {
-               lat: 19.710703,
-               lng: -101.179357 // Casa Pepe,
-           }
-       },
-   ];
+  fetch("places.json")
+    .then((response) => response.json())
+    .then((json) => renderPlaces(json));
 }
 
 function renderPlaces(places) {
-   let scene = document.querySelector('a-scene');
+  let scene = document.querySelector("a-scene");
 
-   places.forEach((place) => {
-       let latitude = place.location.lat;
-       let longitude = place.location.lng;
+  places.forEach((place) => {
+    let latitude = place.location.lat;
+    let longitude = place.location.lng;
 
-       let model = document.createElement('a-entity');
-       model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('gltf-model', 'url(assets/pyramid/untitled.gltf)');
-       model.setAttribute('animation-mixer', '');
-       model.setAttribute('scale', '1 1 1');
+    const entity = document.createElement("a-text");
+    entity.setAttribute("look-at", "[gps-projected-camera]");
+    entity.setAttribute("value", place.name);
+    entity.setAttribute('gps-projected-entity-place', {
+        latitude: latitude,
+        longitude: longitude
+    });
+    entity.setAttribute("scale", "5 5 5");
+    entity.setAttribute("position", "0 10 0");
+    scene.appendChild(entity);
 
-       model.addEventListener('loaded', () => {
-           console.log('loaded');
-           window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-       });
+    const model = document.createElement("a-entity");
+    model.setAttribute(
+      "gps-projected-entity-place",
+      `latitude: ${latitude}; longitude: ${longitude};`
+    );
+    model.setAttribute("gltf-model", "#locator");
+    model.setAttribute("animation-mixer", "");
+    model.setAttribute("scale", ".01 .01 .01");
 
-       scene.appendChild(model);
-   });
+    model.addEventListener("loaded", () => {
+      console.log("loaded " + place.name);
+      window.dispatchEvent(new CustomEvent("gps-entity-place-loaded"));
+    });
+
+    scene.appendChild(model);
+  });
 }
