@@ -1,0 +1,11 @@
+Model Information:
+* title:	Small Museum Display Case
+* source:	https://sketchfab.com/3d-models/small-museum-display-case-bcc6c9850ce8455897196555418c6fa7
+* author:	Charlotte Kimberly Andreassen (https://sketchfab.com/charlottekimberly)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Small Museum Display Case" (https://sketchfab.com/3d-models/small-museum-display-case-bcc6c9850ce8455897196555418c6fa7) by Charlotte Kimberly Andreassen (https://sketchfab.com/charlottekimberly) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

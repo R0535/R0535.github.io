@@ -25,7 +25,7 @@ function renderPlaces(places) {
         latitude: latitude,
         longitude: longitude
     });
-    entity.setAttribute("scale", "5 5 5");
+    entity.setAttribute("scale", "50 50 50");
     entity.setAttribute("position", "0 10 0");
     scene.appendChild(entity);
 
@@ -36,7 +36,7 @@ function renderPlaces(places) {
     );
     model.setAttribute("gltf-model", "#locator");
     model.setAttribute("animation-mixer", "");
-    model.setAttribute("scale", ".01 .01 .01");
+    model.setAttribute("scale", "10 10 10");
 
     model.addEventListener("loaded", () => {
       console.log("loaded " + place.name);
