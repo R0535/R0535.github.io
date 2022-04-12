@@ -1,39 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>ViajAR</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <meta charset='utf-8'>
-  
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>ViajAR</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
-<script src="script.js"></script>
-<body style='margin: 0; overflow: hidden;'>
-  <div class="centered instructions"></div>
-  <a-scene
-        loading-screen="dotsColor: red; backgroundColor: black"
-        vr-mode-ui="enabled: false"
-        light="defaultLightsEnabled: false"
-        arjs='sourceType: webcam; videoTexture: true; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
         <a-assets>
-          <a-asset-item id="locator" src="assets/Case/scene.gltf"></a-asset-item>
-        </a-assets>
-        <a-entity light="type: hemisphere; color: #2F2; groundColor: #F22; intensity: 20"></a-entity>
-        <a-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-projected-camera='gpsMinDistance: 1;gpsTimeInterval:0' position = "0 10 0" rotation-reader></a-camera>
+            <img id="sky" src="./photo.png">
+          </a-assets>
+          <a-sky src="#sky"></a-sky>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
-  </a-scene>
-  <div class="centered">
-    <button data-action="change"></button>
-  </div>
-</body>
+    </a-scene>
+  </body>
 </html>
-
-
