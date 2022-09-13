@@ -25,8 +25,8 @@ function renderPlaces(places) {
         latitude: latitude,
         longitude: longitude
     });
-    entity.setAttribute("scale", "50 50 50");
-    entity.setAttribute("position", "0 10 0");
+    entity.setAttribute("scale", ".01 .01 .01");
+    entity.setAttribute("position", "0 5 0");
     scene.appendChild(entity);
 
     const model = document.createElement("a-entity");
