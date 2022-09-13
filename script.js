@@ -6,7 +6,7 @@ window.onload = () => {
 };
 
 function staticLoadPlaces() {
-  fetch("places.json")
+  fetch("pyramid.json")
     .then((response) => response.json())
     .then((json) => renderPlaces(json));
 }
