@@ -18,6 +18,9 @@
 <script src="script.js"></script>
 <body style='margin: 0; overflow: hidden;'>
   <div class="centered instructions"></div>
+  <div class="centered">
+    <button data-action="change"></button>
+  </div>
   <a-scene
         loading-screen="dotsColor: red; backgroundColor: black"
         vr-mode-ui="enabled: false"
@@ -30,9 +33,7 @@
         <a-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-projected-camera='gpsMinDistance: 1;gpsTimeInterval:0' position = "0 10 0" rotation-reader></a-camera>
 
   </a-scene>
-  <div class="centered">
-    <button data-action="change"></button>
-  </div>
+  
 </body>
 </html>
 
