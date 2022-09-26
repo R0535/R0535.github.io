@@ -2,19 +2,32 @@
 
 <head>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+  <script
+    src="https://rawgit.com/blairmacintyre/aframe-look-at-billboard-component/master/dist/aframe-look-at-billboard-component.min.js"></script>
 </head>
 <script src="majaScript.js"></script>
 
+
 <body>
-  <div style='position: fixed; top: 450px; width:100%; z-index: 1; display:flex; justify-content: space-between'>
-    <button id="prev" style='width:20%; height:70px'>
+
+  <!--
+  <div style='position: fixed; top: 450px; width:fit-content; z-index: 1; display:flex; justify-content: left'>
+    <button id="prev" style='width:200px; height:70px'>
       Previous
     </button>
-
-    <button id="next" style='width:20%; height:70px'>
+  </div>
+  <div
+    style='position: fixed; top: 450px;right:0px; width:fit-content; z-index: 1; display:flex; justify-content: right'>
+    <button id="next" style='width:200px; height:70px'>
       Next
     </button>
-    
+  </div>
+-->
+  <div id="loading"
+    style='background-color:black; height:100%; width:100%; z-index: 2; display:flex; justify-content:center;'>
+    <h1>Loading...</h1>
+
   </div>
   <a-scene id="scene">
     <a-assets>
@@ -41,9 +54,36 @@
       <img id="maja_19" src="./assets/360/Final/360_0119_pano.jpg">
       <img id="maja_20" src="./assets/360/Final/360_0120_pano.jpg">
       <img id="maja_21" src="./assets/360/Final/360_0121_pano.jpg">
-      <img id="door" src="./assets/360_interactive/Asset_3.png">
+      <!-- <img id="door" src="./assets/360_interactive/Asset_3.png">-->
 
     </a-assets>
+
+
+
+
+    <!-- Next Sphere-->
+    <a-sphere scale="0.5 0.5 0.5" position="6 .25 0" radius="1.25" color="#EF2D5E" class="collidable" id ="nextSphere">
+      <a-animation attribute="color" from="blue" to="red" dur="3000" direction="alternate" begin=""></a-animation>
+    </a-sphere>
+    <a-text value="Siguiente" primitive="plane" width="3" position="5 .25 -0.3" rotation=" 0 -90 0"></a-text>
+
+    <!-- Prev Sphere-->
+    <a-sphere scale="0.5 0.5 0.5" position="-6 .25 0" radius="1.25" color="#E26DEE" class="collidable" id ="prevSphere">
+      <a-animation attribute="color" from="blue" to="red" dur="3000" direction="alternate"></a-animation>
+    </a-sphere>
+    <a-text value="Anterior" primitive="plane" width="3" position="-5 .25 0.3" rotation=" 0 90 0"></a-text>
+    <!-- Cursor-->
+    <a-entity camera look-controls>
+      <a-entity cursor="fuse: true; fuseTimeout: 2000"
+        raycaster="objects: .collidable"
+        animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+        animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 2000; from: 1 1 1; to: 0.1 0.1 0.1"
+        animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 150; to: 1 1 1"
+        position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+        material="color: white; shader: flat">
+      </a-entity>
+    </a-entity>
+
     <!-- 
 
     <a-sky id="sphere" src="#maja_88"></a-sky>
