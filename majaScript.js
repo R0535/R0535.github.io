@@ -43,6 +43,12 @@ function renderSky(places, index) {
   let initial = places[index];
   console.log(initial);
 
+
+  let old_sky = document.querySelector("a-sky");
+  if(old_sky!=null) {
+    old_sky.remove
+  }
+
   const sky = document.createElement("a-sky");
   sky.setAttribute("src", `${initial.image_id}`);
 
