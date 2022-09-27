@@ -2,9 +2,6 @@
 
 <head>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-
-  <script
-    src="https://rawgit.com/blairmacintyre/aframe-look-at-billboard-component/master/dist/aframe-look-at-billboard-component.min.js"></script>
 </head>
 <script src="majaScript.js"></script>
 
@@ -23,14 +20,17 @@
       Next
     </button>
   </div>
--->
   <div id="loading"
     style='background-color:black; height:100%; width:100%; z-index: 2; display:flex; justify-content:center;'>
     <h1>Loading...</h1>
 
   </div>
-  <a-scene id="scene">
+  -->
+
+  <a-scene id="scene" vr-mode-ui="enabled: true">
     <a-assets>
+      <a-asset-item id="darkBall" src="assets/360/Balls/dark_ball.gltf" ></a-asset-item>
+      <a-asset-item id="lightBall" src="assets/360/Balls/light_ball.gltf" ></a-asset-item>
       <img id="sky" src="./assets/360/Shot.png">
       <img id="maja_00" src="./assets/360/Final/360_0100_pano.jpg">
       <img id="maja_01" src="./assets/360/Final/360_0101_pano.jpg">
@@ -62,16 +62,19 @@
 
 
     <!-- Next Sphere-->
-    <a-sphere scale="0.5 0.5 0.5" position="6 .25 0" radius="1.25" color="#EF2D5E" class="collidable" id ="nextSphere">
-      <a-animation attribute="color" from="blue" to="red" dur="3000" direction="alternate" begin=""></a-animation>
-    </a-sphere>
-    <a-text value="Siguiente" primitive="plane" width="3" position="5 .25 -0.3" rotation=" 0 -90 0"></a-text>
+    <a-entity gltf-model="#darkBall" scale="0.5 0.5 0.5" position="4 .25 0" class="collidable" id ="nextSphere" rotation=" 0 90 0">
+    </a-entity>
+    <a-text value="Siguiente" primitive="plane" width="3" position="3 .25 -0.3" rotation=" 0 -90 0"></a-text>
 
     <!-- Prev Sphere-->
-    <a-sphere scale="0.5 0.5 0.5" position="-6 .25 0" radius="1.25" color="#E26DEE" class="collidable" id ="prevSphere">
-      <a-animation attribute="color" from="blue" to="red" dur="3000" direction="alternate"></a-animation>
-    </a-sphere>
-    <a-text value="Anterior" primitive="plane" width="3" position="-5 .25 0.3" rotation=" 0 90 0"></a-text>
+    <a-entity gltf-model="#lightBall" scale="0.5 0.5 0.5" position="-3 .25 0" class="collidable" id ="prevSphere" rotation=" 0 90 0">
+    </a-entity>
+    <a-text value="Anterior" primitive="plane" width="3" position="-2 .25 0.3" rotation=" 0 90 0"></a-text>
+
+    <!-- <a-sphere scale="0.5 0.5 0.5" position="6 .25 0" radius="1.25" color="#EF2D5E" class="collidable" id ="nextSphere"></a-sphere>-->
+
+    <!--<a-sphere scale="0.5 0.5 0.5" position="-6 .25 0" radius="1.25" color="#E26DEE" class="collidable" id ="prevSphere"></a-sphere>-->
+
     <!-- Cursor-->
     <a-entity camera look-controls>
       <a-entity cursor="fuse: true; fuseTimeout: 2000"
