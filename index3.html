@@ -10,15 +10,16 @@
     <script  src = "https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js" > </script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<script src="script.js"></script>
 <body style='margin: 0; overflow: hidden;'>
   <div class=""></div>
   <a-scene>
        
-        <a-entity scale=".2 .2 .2" light="color:#fff; intensity: 1.5" position="-1 1 0">
-         <a-entity gltf-model="assets/catrina/catrina-girl.gltf" scale="8 8 8" rotation="-90 0 0">
+        
             </a-entity>
-            <a-marker-camera preset="hiro"></a-marker-camera>
+            <a-marker-camera preset="hiro">
+              <a-entity scale=".2 .2 .2" light="color:#fff; intensity: 1.5" position="-1 1 0">
+                <a-entity gltf-model="/assets/catrina/catrina-girl.gltf" scale ="5 5 5" rotation="-90 0 0"></a-entity>
+            </a-marker-camera>
   </a-scene>
   
 </body>
