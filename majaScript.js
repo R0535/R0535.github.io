@@ -1,8 +1,11 @@
 var init = 0;
 var jsonObj = {};
+var imagesLoading = "imagesAcueducto.json"
+
+
 
 window.onload = () => {
-  staticLoadImages();
+  staticLoadImages(imagesLoading);
 
   document.querySelector("#nextSphere").addEventListener("click", (e) => {
     if (init < jsonObj.length) {
@@ -36,11 +39,11 @@ window.onload = () => {
   });*/
 };
 
-function staticLoadImages() {
-  fetch("images.json")
+function staticLoadImages(json="") {
+  fetch(json)
     .then((response) => response.json())
     .then((json) => {
-      renderSky(json, (init = 0));
+      renderSky(json, (init = init));
       jsonObj = json;
     });
 }

@@ -1,0 +1,159 @@
+[
+    {
+        "id":"100",
+        "image_id":"#maja_00",
+        "desc":"Apunta a las esferas para moverte en el mapa. Manten el centro fijado en la esfera por unos segundos para hacerlo funcionar.",
+        "img_src":"./assets/acueducto/GS__0008.JPG"
+    },
+    {
+        "id":"01",
+        "image_id":"#maja_01",
+        "desc":"Habitacion 100, vista lateral - armario",
+
+        "img_src":"./assets/acueducto/GS__0009.JPG"
+    },
+    {
+        "id":"02",
+        "desc":"Habitacion 100, vista lateral - buro",
+        "image_id":"#maja_02",
+        "img_src":"./assets/acueducto/GS__0010.JPG"
+    },
+    {
+        "id":"03",
+        "desc":"Habitacion 100, vista de terraza",
+        "image_id":"#maja_03",
+        "img_src":"./assets/acueducto/GS__0011.JPG"
+    },
+    {
+        "id":"04",
+        "desc":"Habitacion 100, vista nocturna",
+        "image_id":"#maja_04",
+        "img_src":"./assets/acueducto/GS__0012.JPG"
+    },
+    {
+        "id":"05",
+        "desc":"Habitacion 100 - Baño",
+        "image_id":"#maja_05",
+        "img_src":"./assets/acueducto/GS__0013.JPG"
+    },
+    {
+        "id":"06",
+        "desc":"Habitacion 101, vista general",
+        "image_id":"#maja_06",
+        "img_src":"./assets/acueducto/GS__0014.JPG"
+    },
+    {
+        "id":"07",
+        "desc":"Habitacion 100, vista lateral",
+        "image_id":"#maja_07",
+        "img_src":"./assets/acueducto/GS__0015.JPG"
+    },
+    {
+        "id":"08",
+        "desc":"Habitacion 100, vista nocturna",
+        "image_id":"#maja_08",
+        "img_src":"./assets/acueducto/GS__0016.JPG"
+    },
+    {
+        "id":"09",
+        "desc":"Habitacion 101 - Baño",
+        "image_id":"#maja_09",
+        "img_src":"./assets/acueducto/GS__0017.JPG"
+    },    
+    {
+        "id":"10",
+        "desc":"Habitacion 101, vista de terraza",
+        "image_id":"#maja_10",
+        "img_src":"./assets/acueducto/GS__00018.JPG"
+    },
+    {
+        "id":"11",
+        "desc":"Spa, vista general",
+        "image_id":"#maja_11",
+        "img_src":"./assets/acueducto/GS__0019.JPG"
+    },
+    {
+        "id":"12",
+        "desc":"Spa, vista lateral",
+        "image_id":"#maja_12",
+        "img_src":"./assets/acueducto/GS__0020.JPG"
+    },
+    {
+        "id":"13",
+        "desc":"Spa, vista lateral - Espejo",
+        "image_id":"#maja_13",
+        "img_src":"./assets/acueducto/GS__0021.JPG"
+    },
+    {
+        "id":"14",
+        "desc":"Area verde",
+        "image_id":"#maja_14",
+        "img_src":"./assets/acueducto/GS__0022.JPG"
+    },
+    {
+        "id":"15",
+        "desc":"Piscina - Camastros",
+        "image_id":"#maja_15",
+        "img_src":"./assets/acueducto/GS__0023.JPG"
+    },
+    {
+        "id":"16",
+        "desc":"Piscina - Social",
+        "image_id":"#maja_16",
+        "img_src":"./assets/acueducto/GS__0024.JPG"
+    },
+    {
+        "id":"17",
+        "desc":"Lobby",
+        "image_id":"#maja_17",
+        "img_src":"./assets/acueducto/GS__0025.JPG"
+    },
+    {
+        "id":"18",
+        "desc":"Lobby - Social",
+        "image_id":"#maja_18",
+        "img_src":"./assets/acueducto/GS__0026.JPG"
+    },
+    {
+        "id":"19",
+        "desc":"Cava",
+        "image_id":"#maja_19",
+        "img_src":"./assets/acueducto/GS__0027.JPG"
+    },
+    {
+        "id":"20",
+        "desc":"Lobby - Segundo Edificio",
+        "image_id":"#maja_20",
+        "img_src":"./assets/acueducto/GS__0028.JPG"
+    },
+    {
+        "id":"21",
+        "desc":"Estacionamiento y area comun",
+        "image_id":"#maja_21",
+        "img_src":"./assets/acueducto/GS__0029.JPG"
+    },
+    {
+        "id":"21",
+        "desc":"Estacionamiento y area comun",
+        "image_id":"#maja_22",
+        "img_src":"./assets/acueducto/GS__0030.JPG"
+    },
+    {
+        "id":"21",
+        "desc":"Estacionamiento y area comun",
+        "image_id":"#maja_23",
+        "img_src":"./assets/acueducto/GS__0031.JPG"
+    },
+    {
+        "id":"21",
+        "desc":"Estacionamiento y area comun",
+        "image_id":"#maja_24",
+        "img_src":"./assets/acueducto/GS__0032.JPG"
+    },
+    {
+        "id":"21",
+        "desc":"Estacionamiento y area comun",
+        "image_id":"#maja_25",
+        "img_src":"./assets/acueducto/GS__0033.JPG"
+    }
+]

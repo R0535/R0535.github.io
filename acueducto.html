@@ -1,0 +1,109 @@
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<script src="majaScript.js"></script>
+
+
+<body>
+
+  <!--
+  <div style='position: fixed; top: 450px; width:fit-content; z-index: 1; display:flex; justify-content: left'>
+    <button id="prev" style='width:200px; height:70px'>
+      Previous
+    </button>
+  </div>
+  <div
+    style='position: fixed; top: 450px;right:0px; width:fit-content; z-index: 1; display:flex; justify-content: right'>
+    <button id="next" style='width:200px; height:70px'>
+      Next
+    </button>
+  </div>
+  <div id="loading"
+    style='background-color:black; height:100%; width:100%; z-index: 2; display:flex; justify-content:center;'>
+    <h1>Loading...</h1>
+
+  </div>
+  -->
+
+  <a-scene id="scene" vr-mode-ui="enabled: true">
+    <a-assets>
+      <a-asset-item id="darkBall" src="assets/360/Balls/dark_ball.gltf" ></a-asset-item>
+      <a-asset-item id="lightBall" src="assets/360/Balls/light_ball.gltf" ></a-asset-item>
+      <img id="sky" src="./assets/360/Shot.png">
+      <img id="maja_00" src="./assets/acueducto/GS__0008.JPG">
+      <img id="maja_01" src="./assets/acueducto/GS__0009.JPG">
+      <img id="maja_02" src="./assets/acueducto/GS__0010.JPG">
+      <img id="maja_03" src="./assets/acueducto/GS__0011.JPG">
+      <img id="maja_04" src="./assets/acueducto/GS__0012.JPG">
+      <img id="maja_05" src="./assets/acueducto/GS__0013.JPG">
+      <img id="maja_06" src="./assets/acueducto/GS__0014.JPG">
+      <img id="maja_07" src="./assets/acueducto/GS__0015.JPG">
+      <img id="maja_08" src="./assets/acueducto/GS__0016.JPG">
+      <img id="maja_09" src="./assets/acueducto/GS__0017.JPG">
+      <img id="maja_10" src="./assets/acueducto/GS__0018.JPG">
+      <img id="maja_11" src="./assets/acueducto/GS__0019.JPG">
+      <img id="maja_12" src="./assets/acueducto/GS__0020.JPG">
+      <img id="maja_13" src="./assets/acueducto/GS__0021.JPG">
+      <img id="maja_14" src="./assets/acueducto/GS__0022.JPG">
+      <img id="maja_15" src="./assets/acueducto/GS__0023.JPG">
+      <img id="maja_16" src="./assets/acueducto/GS__0024.JPG">
+      <img id="maja_17" src="./assets/acueducto/GS__0025.JPG">
+      <img id="maja_18" src="./assets/acueducto/GS__0026.JPG">
+      <img id="maja_19" src="./assets/acueducto/GS__0027.JPG">
+      <img id="maja_20" src="./assets/acueducto/GS__0028.JPG">
+      <img id="maja_21" src="./assets/acueducto/GS__0029.JPG">
+      <img id="maja_22" src="./assets/acueducto/GS__0030.JPG">
+      <img id="maja_23" src="./assets/acueducto/GS__0031.JPG">
+      <img id="maja_24" src="./assets/acueducto/GS__0032.JPG">
+      <img id="maja_25" src="./assets/acueducto/GS__0033.JPG">
+      <!-- <img id="door" src="./assets/360_interactive/Asset_3.png">-->
+
+    </a-assets>
+
+
+
+
+    <!-- Next Sphere-->
+    <a-entity gltf-model="#darkBall" scale="0.5 0.5 0.5" position="4 .4 0" class="collidable" id ="nextSphere" rotation=" 0 90 0">
+    </a-entity>
+    <a-entity text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; value: SIGUIENTE; color:green" width="30" position="1.001 .197 0.385" rotation=" 0 -90 0" ></a-entity>
+    <a-entity text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; value: SIGUIENTE; color:white" width="30" position="1 .2 0.38" rotation=" 0 -90 0" ></a-entity>
+    <!-- Prev Sphere-->
+    <a-entity gltf-model="#lightBall" scale="0.5 0.5 0.5" position="-4 .4 0" class="collidable" id ="prevSphere" rotation=" 0 90 0">
+    </a-entity>
+    <a-entity text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; value: ANTERIOR; color:red"  width="3" position="-1.001 .197 -0.385" rotation=" 0 90 0" ></a-entity>
+    <a-entity text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; value: ANTERIOR; color:white"  width="3" position="-1 .2 -0.38" rotation=" 0 90 0" ></a-entity>
+
+
+    <!-- <a-sphere scale="0.5 0.5 0.5" position="6 .25 0" radius="1.25" color="#EF2D5E" class="collidable" id ="nextSphere"></a-sphere>-->
+
+    <!--<a-sphere scale="0.5 0.5 0.5" position="-6 .25 0" radius="1.25" color="#E26DEE" class="collidable" id ="prevSphere"></a-sphere>-->
+
+    <!-- Cursor-->
+    <a-entity camera look-controls>
+      <a-entity cursor="fuse: true; fuseTimeout: 2000"
+        raycaster="objects: .collidable"
+        animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+        animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 2000; from: 1 1 1; to: 0.1 0.1 0.1"
+        animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 150; to: 1 1 1"
+        position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+        material="color: white; shader: flat">
+      </a-entity>
+    </a-entity>
+
+    <!-- 
+
+    <a-sky id="sphere" src="#maja_88"></a-sky>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="-10 .2 0" rotation="0 90 0" width="3.6" height="5.8" src="#door" material = "opacity:.4;shinyness: 10;vertexColors:Vertex;emissive:#E3C117;emissiveIntensity:.5"></a-img>"  
+        -->
+
+  </a-scene>
+</body>
+
+
+</html>
