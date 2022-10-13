@@ -1,34 +1,21 @@
 [
     {
-        "id":"100",
-        "image_id":"#maja_00",
-        "desc":"Apunta a las esferas para moverte en el mapa. Manten el centro fijado en la esfera por unos segundos para hacerlo funcionar.",
-        "img_src":"./assets/acueducto/GS__0008.JPG"
-    },
-    {
-        "id":"01",
-        "image_id":"#maja_01",
-        "desc":"Habitacion 100, vista lateral - armario",
-
-        "img_src":"./assets/acueducto/GS__0009.JPG"
-    },
-    {
-        "id":"02",
-        "desc":"Habitacion 100, vista lateral - buro",
-        "image_id":"#maja_02",
-        "img_src":"./assets/acueducto/GS__0010.JPG"
-    },
-    {
-        "id":"03",
-        "desc":"Habitacion 100, vista de terraza",
-        "image_id":"#maja_03",
-        "img_src":"./assets/acueducto/GS__0011.JPG"
-    },
-    {
         "id":"04",
-        "desc":"Habitacion 100, vista nocturna",
+        "desc":"Apunta a las esferas para moverte en el mapa. Manten el centro fijado en la esfera por unos segundos para hacerlo funcionar.",
         "image_id":"#maja_04",
-        "img_src":"./assets/acueducto/GS__0012.JPG"
+        "img_src":"./assets/acueducto/GS__0012.JPG",
+        "routes":[
+            {
+                "coords":{
+                    "x":0,
+                    "y":0,
+                    "z":0
+                },
+                "ids":[
+                    "05"
+                ]
+            }
+        ]
     },
     {
         "id":"05",
@@ -149,11 +136,5 @@
         "desc":"Estacionamiento y area comun",
         "image_id":"#maja_24",
         "img_src":"./assets/acueducto/GS__0032.JPG"
-    },
-    {
-        "id":"21",
-        "desc":"Estacionamiento y area comun",
-        "image_id":"#maja_25",
-        "img_src":"./assets/acueducto/GS__0033.JPG"
     }
 ]
