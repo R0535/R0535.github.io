@@ -1,4 +1,4 @@
-var init = 20;
+var init = 0;
 var jsonObj = {};
 var imagesLoading = "images.json"
 

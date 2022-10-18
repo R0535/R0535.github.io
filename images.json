@@ -1,135 +1,135 @@
 [
     {
         "id":"100",
-        "image_id":"#maja_00",
+        "image_id":"#Final_00",
         "desc":"Habitacion 100, vista general",
-        "img_src":"./assets/360/Maja/360_0100_pano.jpg"
+        "img_src":"./assets/360/Final/360_0100_pano.jpg"
     },
     {
         "id":"01",
-        "image_id":"#maja_01",
+        "image_id":"#Final_01",
         "desc":"Habitacion 100, vista lateral - armario",
 
-        "img_src":"./assets/360/Maja/360_0101_pano.jpg"
+        "img_src":"./assets/360/Final/360_0101_pano.jpg"
     },
     {
         "id":"02",
         "desc":"Habitacion 100, vista lateral - buro",
-        "image_id":"#maja_02",
-        "img_src":"./assets/360/Maja/360_0102_pano.jpg"
+        "image_id":"#Final_02",
+        "img_src":"./assets/360/Final/360_0102_pano.jpg"
     },
     {
         "id":"03",
         "desc":"Habitacion 100, vista de terraza",
-        "image_id":"#maja_03",
-        "img_src":"./assets/360/Maja/360_0103_pano.jpg"
+        "image_id":"#Final_03",
+        "img_src":"./assets/360/Final/360_0103_pano.jpg"
     },
     {
         "id":"04",
         "desc":"Habitacion 100, vista nocturna",
-        "image_id":"#maja_04",
-        "img_src":"./assets/360/Maja/360_0104_pano.jpg"
+        "image_id":"#Final_04",
+        "img_src":"./assets/360/Final/360_0104_pano.jpg"
     },
     {
         "id":"05",
         "desc":"Habitacion 100 - Baño",
-        "image_id":"#maja_05",
-        "img_src":"./assets/360/Maja/360_0105_pano.jpg"
+        "image_id":"#Final_05",
+        "img_src":"./assets/360/Final/360_0105_pano.jpg"
     },
     {
         "id":"06",
         "desc":"Habitacion 101, vista general",
-        "image_id":"#maja_06",
-        "img_src":"./assets/360/Maja/360_0106_pano.jpg"
+        "image_id":"#Final_06",
+        "img_src":"./assets/360/Final/360_0106_pano.jpg"
     },
     {
         "id":"07",
         "desc":"Habitacion 100, vista lateral",
-        "image_id":"#maja_07",
-        "img_src":"./assets/360/Maja/360_0107_pano.jpg"
+        "image_id":"#Final_07",
+        "img_src":"./assets/360/Final/360_0107_pano.jpg"
     },
     {
         "id":"08",
         "desc":"Habitacion 100, vista nocturna",
-        "image_id":"#maja_08",
-        "img_src":"./assets/360/Maja/360_0108_pano.jpg"
+        "image_id":"#Final_08",
+        "img_src":"./assets/360/Final/360_0108_pano.jpg"
     },
     {
         "id":"09",
         "desc":"Habitacion 101 - Baño",
-        "image_id":"#maja_09",
-        "img_src":"./assets/360/Maja/360_0109_pano.jpg"
+        "image_id":"#Final_09",
+        "img_src":"./assets/360/Final/360_0109_pano.jpg"
     },    
     {
         "id":"10",
         "desc":"Habitacion 101, vista de terraza",
-        "image_id":"#maja_10",
-        "img_src":"./assets/360/Maja/360_0110_pano.jpg"
+        "image_id":"#Final_10",
+        "img_src":"./assets/360/Final/360_0110_pano.jpg"
     },
     {
         "id":"11",
         "desc":"Spa, vista general",
-        "image_id":"#maja_11",
-        "img_src":"./assets/360/Maja/360_0111_pano.jpg"
+        "image_id":"#Final_11",
+        "img_src":"./assets/360/Final/360_0111_pano.jpg"
     },
     {
         "id":"12",
         "desc":"Spa, vista lateral",
-        "image_id":"#maja_12",
-        "img_src":"./assets/360/Maja/360_0112_pano.jpg"
+        "image_id":"#Final_12",
+        "img_src":"./assets/360/Final/360_0112_pano.jpg"
     },
     {
         "id":"13",
         "desc":"Spa, vista lateral - Espejo",
-        "image_id":"#maja_13",
-        "img_src":"./assets/360/Maja/360_0113_pano.jpg"
+        "image_id":"#Final_13",
+        "img_src":"./assets/360/Final/360_0113_pano.jpg"
     },
     {
         "id":"14",
         "desc":"Area verde",
-        "image_id":"#maja_14",
-        "img_src":"./assets/360/Maja/360_0114_pano.jpg"
+        "image_id":"#Final_14",
+        "img_src":"./assets/360/Final/360_0114_pano.jpg"
     },
     {
         "id":"15",
         "desc":"Piscina - Camastros",
-        "image_id":"#maja_15",
-        "img_src":"./assets/360/Maja/360_0115_pano.jpg"
+        "image_id":"#Final_15",
+        "img_src":"./assets/360/Final/360_0115_pano.jpg"
     },
     {
         "id":"16",
         "desc":"Piscina - Social",
-        "image_id":"#maja_16",
-        "img_src":"./assets/360/Maja/360_0116_pano.jpg"
+        "image_id":"#Final_16",
+        "img_src":"./assets/360/Final/360_0116_pano.jpg"
     },
     {
         "id":"17",
         "desc":"Lobby",
-        "image_id":"#maja_17",
-        "img_src":"./assets/360/Maja/360_0117_pano.jpg"
+        "image_id":"#Final_17",
+        "img_src":"./assets/360/Final/360_0117_pano.jpg"
     },
     {
         "id":"18",
         "desc":"Lobby - Social",
-        "image_id":"#maja_18",
-        "img_src":"./assets/360/Maja/360_0118_pano.jpg"
+        "image_id":"#Final_18",
+        "img_src":"./assets/360/Final/360_0118_pano.jpg"
     },
     {
         "id":"19",
         "desc":"Cava",
-        "image_id":"#maja_19",
-        "img_src":"./assets/360/Maja/360_0119_pano.jpg"
+        "image_id":"#Final_19",
+        "img_src":"./assets/360/Final/360_0119_pano.jpg"
     },
     {
         "id":"20",
         "desc":"Lobby - Segundo Edificio",
-        "image_id":"#maja_20",
-        "img_src":"./assets/360/Maja/360_0120_pano.jpg"
+        "image_id":"#Final_20",
+        "img_src":"./assets/360/Final/360_0120_pano.jpg"
     },
     {
         "id":"21",
         "desc":"Estacionamiento y area comun",
-        "image_id":"#maja_21",
-        "img_src":"./assets/360/Maja/360_0121_pano.jpg"
+        "image_id":"#Final_21",
+        "img_src":"./assets/360/Final/360_0121_pano.jpg"
     }
 ]
