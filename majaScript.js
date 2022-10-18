@@ -1,6 +1,6 @@
 var init = 20;
 var jsonObj = {};
-var imagesLoading = "imagesAcueducto.json"
+var imagesLoading = "images.json"
 
 
 
